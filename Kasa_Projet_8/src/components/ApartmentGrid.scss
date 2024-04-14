@@ -10,15 +10,22 @@
   padding: 1rem;
   justify-content: space-between;
   & > * {
-    width: 100%;
+    width: calc(33.33% - 1rem); /* 1rem de gap entre les éléments */
     max-width: 20rem;
   }
-}
 
-@media screen and (width <= 768px) {
-  .grid {
-    justify-content: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column; /* Passe en colonne sous 768px */
+    align-items: center; /* Centre les éléments horizontalement */
     background-color: colors.$grid-background-light;
-    padding: 0;
+    & > * {
+      width: 100%; /* Les éléments occupent toute la largeur sur les petits écrans */
+    }
+  }
+
+  @media screen and (min-width: 768px) { /* Au-dessus de 768px */
+    & > * {
+      width: calc(33.33% - 1rem); /* Limite à 3 colonnes */
+    }
   }
 }
