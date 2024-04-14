@@ -3,7 +3,7 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import HomePage from "../pages/Homepage";
 import Footer from "../layout/Footer";
 import Main from "../layout/Main";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavBar";
 import ApartmentPage from "../pages/ApartmentPage";
 import About from "../pages/About";
 import { ErrorPageNotFound } from "../pages/ErrorPageNotFound";
@@ -19,6 +19,8 @@ const HeaderFooterLayout = () => {
     </>
   );
 };
+
+export default HeaderFooterLayout
 
 export const router = createBrowserRouter([
     {

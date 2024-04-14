@@ -1,7 +1,7 @@
 import React from "react";
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import { ImageBanner } from "../components/ImageBanner";
-import "./About.scss";
+import "./about.scss";
 
 function About() {
   return (
