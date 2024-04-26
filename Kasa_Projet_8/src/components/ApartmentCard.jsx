@@ -11,10 +11,10 @@ function ApartmentCard(props) {
           apartmentId: props.id
         }}
       >
-        <div className="apartment">
+        <article className="apartment">
           <img src={props.imageUrl} alt="" />
           <div className="apartment__subtitle">{props.title}</div>
-        </div>
+        </article>
       </Link>
     );
   }

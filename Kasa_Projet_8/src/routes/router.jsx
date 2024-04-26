@@ -21,25 +21,34 @@ const HeaderFooterLayout = () => {
   );
 };
 
-export default HeaderFooterLayout
+const RedirectToErrorPage = () => <Navigate to="/error" />;
 
 export const router = createBrowserRouter([
-    {
-        element: <HeaderFooterLayout />,
-        errorElement: <ErrorPageNotFound />,
-        children: [
-          {
-            path: "/",
-            element: <HomePage />
-          },
-          {
-            path: "/flat",
-            element: <ApartmentPage />
-          },
-          {
-            path: "/about",
-            element: <About />
-          }
-        ]
-    }
+  {
+    element: <HeaderFooterLayout />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />
+      },
+      {
+        path: "/flat",
+        element: <ApartmentPage />
+      },
+      {
+        path: "/about",
+        element: <About />
+      },
+      // Ajout de la redirection vers la page d'erreur
+      {
+        path: "*",
+        element: <ErrorPageNotFound />
+      }
+    ]
+  },
+  // Route pour la page d'erreur
+  {
+    path: "/error",
+    element: <ErrorPageNotFound />
+  }
 ]);

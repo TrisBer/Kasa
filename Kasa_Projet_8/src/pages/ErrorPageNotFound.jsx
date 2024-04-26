@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/NavBar";
 import Main from "../layout/Main";
 import "./ErrorPageNotFound.scss";
+
+
 export function ErrorPageNotFound() {
   return (
     <>
-      <NavBar />
       <Main>
         <div className="error-page">
           <h1>404</h1>
