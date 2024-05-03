@@ -6,10 +6,9 @@
   border-radius: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 2rem;
+  padding: 3rem;
   justify-content: space-between;
-
   & > * {
     width: calc(33.33% - (2rem + 2px)); /* 2rem de gap et 2px de bordure entre les éléments */
     max-width: calc((100% - 2rem - 2px) / 3); /* Répartit les éléments sur 3 colonnes */

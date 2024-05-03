@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./ApartmentGrid.scss";
 import ApartmentCard from "./ApartmentCard.jsx";
 import { useApartments } from "./../hooks/useApartments.jsx";
