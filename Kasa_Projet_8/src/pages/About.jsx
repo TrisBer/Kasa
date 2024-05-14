@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import { ImageBanner } from "../components/ImageBanner";
 import "./about.scss";

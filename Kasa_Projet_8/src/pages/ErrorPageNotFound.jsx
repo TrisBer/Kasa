@@ -1,6 +1,6 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
+//import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/NavBar";
 import Main from "../layout/Main";
 import "./ErrorPageNotFound.scss";
 

@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import "./ApartmentPage.scss";
 import { ImageBanner } from "../components/ImageBanner";
 import { ApartmentHeader } from "../components/ApartmentHeader";
 import { useApartment } from "../hooks/useApartment";
+import { useParams } from 'react-router-dom';
 
 function ApartmentPage() {
-  const flat = useApartment();
+  const { id } = useParams(); // Extraction de l'ID de l'URL
+  const flat = useApartment(id); // Utilisation de l'ID pour récupérer les données de l'appartement
 
   if (flat == null) return <div>Loading...</div>;
   return (

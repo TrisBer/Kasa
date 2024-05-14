@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import HomePage from "../pages/Homepage";
 import Footer from "../layout/Footer";
@@ -21,8 +21,6 @@ const HeaderFooterLayout = () => {
   );
 };
 
-const RedirectToErrorPage = () => <Navigate to="/error" />;
-
 export const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
@@ -32,7 +30,7 @@ export const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: "/flat",
+        path: "/flat/:id",
         element: <ApartmentPage />
       },
       {
