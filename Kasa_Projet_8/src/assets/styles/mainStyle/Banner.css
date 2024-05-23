@@ -1,0 +1,94 @@
+.aboutBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3) url(../../images/about-background.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 223px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 769px) {
+  .aboutBackground {
+    background: rgba(0, 0, 0, 0.3) url(../../images/about-background.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+  }
+}
+  
+  .banner-container {
+    height: 111px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3) url(../../images/background-banner.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  }
+
+  @media screen and (min-width: 769px) {
+    .banner-container {
+      height: 223px;
+      border-radius: 25px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3) url(../../images/background-banner.png);
+      background-blend-mode: darken;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 20px;
+    }
+  }
+  
+  .banner-image {
+    width: 100%;
+    object-fit:cover;
+    border-radius: 10px; 
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 28.04%;
+    left: 5.6%;
+    right: 32.53%;
+    bottom: 80.05%;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 217px;
+    height: 48px;
+  }
+  @media screen and (min-width: 769px) {
+    .banner-text {
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 142.6%;
+      border-radius: 25px;
+    }
+  }
+  
+  

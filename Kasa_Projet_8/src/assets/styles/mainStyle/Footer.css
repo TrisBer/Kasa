@@ -1,0 +1,40 @@
+
+.foot-container {
+  margin-top: 320px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center; 
+  background-color: #000; 
+  color: #fff;
+  padding: 1%;
+  padding-top: 4%;
+}
+
+.foot-container img {
+  margin-bottom: 10px; 
+}
+
+.foot-container_text {
+  text-align: center; 
+  font-size: 14px; 
+  color: #fff; 
+}
+
+@media (min-width: 769px) {
+  .foot-container {
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 1%;
+    padding-top: 2%;
+  }
+
+  .foot-container img {
+    margin-bottom: 0; 
+  }
+
+  .foot-container_text {
+    text-align: right; 
+    font-size: 16px; 
+  }
+}

@@ -1,0 +1,27 @@
+.rate-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  width: 20px; 
+  height: auto; 
+  margin-right: 2px; 
+}
+
+
+.star:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .rate-area{
+    justify-content: flex-start;
+    margin-top: -7%;
+  }
+  .star {
+    width: 35px; 
+    margin-right: 6px; 
+  }
+}

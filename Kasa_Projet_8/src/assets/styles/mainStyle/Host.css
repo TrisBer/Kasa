@@ -1,0 +1,43 @@
+
+
+
+.host-area {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row; 
+  gap: 10px;
+}
+
+.host-name {
+  font-size: 1em; 
+  color: #FF385C; 
+  font-weight: 500; 
+  margin: 0; 
+}
+
+.hostPicture img {
+  width: 50px; 
+  height: 50px;
+  object-fit: cover; 
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 769px) {
+  .host-area {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .host-name {
+    font-size: 1.2em; 
+  }
+
+  .hostPicture img {
+    width: 60px; 
+    height: 60px;
+  }
+}
+
+
+
