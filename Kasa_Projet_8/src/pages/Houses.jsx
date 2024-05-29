@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import data from "../data/logements.json"
 
-import axios from "axios";
 
 import { Carousel } from '../components/carousel/carousel';
 import { Collapse } from "../components/common/Collapse"
@@ -24,10 +24,8 @@ export const Houses = () => {
       const getData = async () => {
 
         try {
-          //demande de récupération des données du JSON
-          const houseResponse = await axios.get("/logements.json");
           //trouver la maison par la pièce d'identité
-          const houseChosen = houseResponse.data.find(({ id }) => id === params.id);
+          const houseChosen = data.find(({ id }) => id === params.id);
           //aller à la page d'erreur si la maison n'existe pas
           if (houseChosen === undefined) {
             navigate("/404", { state: { message: "Impossible to fetch the datas" } });
